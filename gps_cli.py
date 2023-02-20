@@ -4,9 +4,7 @@ https://github.com/MartijnBraam/gpsd-py3
 """
 
 import click
-import os
 import gpsd
-import time
 
 
 @click.command()
@@ -39,3 +37,6 @@ def convert_DDtoDMM():
 #         if not (gps.MODE_SET & session.valid):
 #             #not use, probably not a valid TPV message
 #             continue
+
+# Delete below once they actually get used.
+gpsd.connect()
